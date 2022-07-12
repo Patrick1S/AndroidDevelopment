@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestTwoActivity">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:orientation="vertical"
+        >
+
+
+        <GridLayout
+
+            android:columnCount="4"
+            android:rowCount="5"
+            android:orientation="horizontal">
+
+            <Spinner android:id="@+id/skipto"
+                android:layout_columnSpan="4"
+                android:entries="@array/CaculatorType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+            </Spinner>
+
+
+            <TextView android:text="HEX"
+                android:layout_columnSpan="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+
+            <EditText android:id="@+id/edt_hex"
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="4"
+                >
+            </EditText>
+
+            <TextView android:text="DEC"
+                android:layout_columnSpan="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <EditText android:id="@+id/edt_dec"
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="4"
+                >
+            </EditText>
+
+            <TextView android:text="OCT"
+                android:layout_columnSpan="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <EditText android:id="@+id/edt_oct"
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="4"
+                >
+            </EditText>
+
+
+            <TextView android:text="BIN"
+                android:layout_columnSpan="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+
+            <EditText android:id="@+id/edt_bin"
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="4"
+                >
+            </EditText>
+
+            <Button android:id="@+id/btn_A"
+                    android:layout_margin="2dp"
+                    android:layout_height="60dp"
+                    android:layout_width="70dp"
+                    android:text="A">
+            </Button>
+
+
+                <Button android:id="@+id/btn_B"
+                    android:layout_margin="2dp"
+                    android:layout_height="60dp"
+                    android:layout_width="70dp"
+                    android:text="B">
+                </Button>
+
+            <Button android:id="@+id/btn_C"
+                android:layout_margin="2dp"
+                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:text="C">
+            </Button>
+
+
+            <Button android:id="@+id/btn_D"
+                android:layout_margin="2dp"
+                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:text="D">
+            </Button>
+
+            <Button android:id="@+id/btn1"
+                    android:layout_height="60dp"
+                    android:layout_width="70dp"
+                    android:text="1">
+                </Button>
+                <Button android:id="@+id/btn2"
+                    android:layout_height="60dp"
+                    android:layout_width="70dp"
+                    android:text="2">
+                </Button>
+                <Button android:id="@+id/btn3"
+                    android:layout_height="60dp"
+                    android:layout_width="70dp"
+                    android:text="3">
+                </Button>
+
+            <Button android:id="@+id/btn_E"
+                android:layout_margin="2dp"
+                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:text="E">
+            </Button>
+
+
+            <Button android:id="@+id/btn4"
+                    android:layout_height="60dp"
+                    android:layout_width="70dp"
+                    android:text="4">
+                </Button>
+                <Button android:id="@+id/btn5"
+                    android:layout_height="60dp"
+                    android:layout_width="70dp"
+                    android:text="5">
+                </Button>
+                <Button android:id="@+id/btn6"
+                    android:layout_height="60dp"
+                    android:layout_width="70dp"
+                    android:text="6">
+                </Button>
+
+
+            <Button android:id="@+id/btn_F"
+                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:text="F">
+            </Button>
+
+                <Button android:id="@+id/btn7"
+                    android:layout_height="60dp"
+                    android:layout_width="70dp"
+                    android:text="7">
+                </Button>
+                <Button android:id="@+id/btn8"
+                    android:layout_height="60dp"
+                    android:layout_width="70dp"
+                    android:text="8">
+                </Button>
+
+
+                <Button android:id="@+id/btn9"
+                    android:layout_height="60dp"
+                    android:layout_width="70dp"
+                    android:text="9">
+                </Button>
+
+
+            <Button android:id="@+id/btndel"
+                android:layout_margin="2dp"
+                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:text="del">
+            </Button>
+
+
+                <Button android:id="@+id/btnPoint"
+                    android:layout_height="60dp"
+                    android:layout_width="70dp"
+                    android:text=".">
+                </Button>
+
+
+
+
+
+            <Button android:id="@+id/btn0"
+                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:text="0">
+            </Button>
+
+
+            <Button android:id="@+id/btnEqual"
+                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:layout_rowSpan="1"
+                android:text="="></Button>
+
+
+            <Button android:id="@+id/btnClear"
+                    android:layout_height="60dp"
+                    android:layout_width="70dp"
+                    android:layout_rowSpan="1"
+                    android:text="ce"></Button>
+
+
+            </GridLayout>
+        </GridLayout>
+    </ScrollView>

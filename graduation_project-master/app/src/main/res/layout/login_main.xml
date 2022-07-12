@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/login_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="?attr/actionBarSize"
+    android:background="@color/fragment_color1">
+
+    <LinearLayout
+        android:id="@+id/main_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/ic_launcher" />
+
+
+            <com.dk.view.patheffect.PathTextView
+                android:id="@+id/path"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="UID:" />
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/ed_login_user"
+                android:layout_width="0dp"
+                android:textColor="@color/black"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/login_more"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/login_more"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:textColor="@color/black"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="KEY:" />
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/ed_login_password"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:inputType="textPassword"
+                app:passwordToggleEnabled="true"
+                />
+            <TextView
+                android:id="@+id/eye"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/eye_close"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/login_bottom"
+        android:layout_below="@+id/main_login">
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/background_square_login2">
+
+            <Button
+                android:id="@+id/bt_login"
+                android:layout_width="75dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/login" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/login_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/bt_login_with_infos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="忘记密码"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</RelativeLayout>

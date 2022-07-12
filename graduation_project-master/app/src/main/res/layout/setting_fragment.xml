@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="?attr/actionBarSize"
+    android:background="@color/fragment_color1">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/alter_users"
+            android:paddingLeft="10dp"
+            android:textColor="@color/fragment__color3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="切换用户"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:background="@color/fragment_color2"
+           />
+        <TextView
+            android:paddingRight="10dp"
+            android:textColor="@color/fragment__color3"
+            android:layout_width="wrap_content"
+            android:text=">"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:background="@color/fragment_color2"
+           />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/my_color1" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingLeft="10dp"
+            android:textColor="@color/fragment__color3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="更新当前单词本"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:background="@color/fragment_color2"
+            />
+        <TextView
+            android:paddingRight="10dp"
+            android:textColor="@color/fragment__color3"
+            android:layout_width="wrap_content"
+            android:text=">"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:background="@color/fragment_color2"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:textColor="@color/fragment__color3"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="设置每天的任务量" />
+    <LinearLayout
+        android:background="@color/fragment_color2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/limit_edit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:inputType="number" />
+        <Button
+            android:id="@+id/limit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认" />
+    </LinearLayout>
+    <View
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/my_color1" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="15dp"
+            android:textColor="@color/fragment__color3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:text="重置学习进度和学习任务量" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="确认"
+            android:id="@+id/db_reset"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/fragment__color3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="黑夜主题" />
+        <Switch
+           android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:id="@+id/theme_night"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

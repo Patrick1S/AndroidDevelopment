@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/fragment_vp"
+        android:background="@color/fragment_color1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tabs_rg" />
+
+    <RadioGroup
+        android:background="@color/fragment_color1"
+        android:id="@+id/tabs_rg"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:button="@null"
+            android:id="@+id/today_tab"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/bottom_radio_height"
+            android:checked="true"
+            android:background="@drawable/bottom_radio_style"
+            android:text="复习" />
+
+        <RadioButton
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:button="@null"
+            android:id="@+id/record_tab"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_radio_style"
+            android:layout_height="@dimen/bottom_radio_height"
+            android:text="统计" />
+
+        <RadioButton
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:button="@null"
+            android:background="@drawable/bottom_radio_style"
+            android:id="@+id/contact_tab"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/bottom_radio_height"
+            android:text="词本" />
+
+        <RadioButton
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:button="@null"
+            android:background="@drawable/bottom_radio_style"
+            android:id="@+id/settings_tab"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/bottom_radio_height"
+            android:text="设置" />
+    </RadioGroup>
+</RelativeLayout>

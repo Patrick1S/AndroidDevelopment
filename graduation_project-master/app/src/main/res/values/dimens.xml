@@ -1,0 +1,10 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- explain and textSize of the pieChart item-->
+    <dimen name="pie_item_explain">15dp</dimen>
+    <dimen name="pie_item_textSize">14sp</dimen>
+    <!--height of bottomRadio-->
+    <dimen name="bottom_radio_height">35dp</dimen>
+</resources>

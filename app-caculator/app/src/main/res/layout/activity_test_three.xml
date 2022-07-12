@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestThreeActivity"
+    android:orientation="horizontal">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+    <Spinner
+
+        android:id="@+id/skipto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/CaculatorType"
+        android:layout_columnSpan="2"
+        android:layout_marginBottom="20dp"></Spinner>
+    <GridLayout
+
+        android:layout_width="160dp"
+        android:layout_height="360dp"
+        android:columnCount="1"
+        >
+
+    <TextView android:text="长度"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+    <Spinner
+
+        android:id="@+id/spin_len1"
+        android:entries="@array/LengthType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Spinner>
+
+    <EditText android:id="@+id/edt_len1"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+    <Spinner  android:id="@+id/spin_len2"
+        android:entries="@array/LengthType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ></Spinner>
+
+    <EditText android:id="@+id/edt_len2"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp">
+
+    </EditText>
+
+
+    <TextView android:text="体积"
+        android:layout_columnSpan="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+    <Spinner  android:id="@+id/spin_vol1"
+        android:entries="@array/VolumeType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Spinner>
+
+    <EditText android:id="@+id/edt_vol1"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+    <Spinner android:id="@+id/spin_vol2"
+        android:entries="@array/VolumeType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Spinner>
+
+    <EditText android:id="@+id/edt_vol2"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="160dp"
+        android:layout_height="360dp"
+        android:columnCount="1">
+    <TextView android:text="重量"
+        android:layout_columnSpan="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+    <Spinner android:id="@+id/spin_wht1"
+        android:entries="@array/WeightType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Spinner>
+
+    <EditText android:id="@+id/edt_wht1"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+    <Spinner android:id="@+id/spin_wht2"
+        android:entries="@array/WeightType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Spinner>
+
+    <EditText
+        android:id="@+id/edt_wht2"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp">
+
+    </EditText>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:text="实时汇率"></TextView>
+    <Spinner
+        android:id="@+id/spin_hb1"
+        android:entries="@array/HbType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Spinner>
+
+    <EditText
+        android:id="@+id/edt_hb1"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+    <Spinner
+        android:id="@+id/spin_hb2"
+        android:entries="@array/HbType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Spinner>
+
+        <EditText
+            android:id="@+id/edt_hb2"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content">
+
+        </EditText>
+    </GridLayout>
+    </GridLayout>
+
+</ScrollView>

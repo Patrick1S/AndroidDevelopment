@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/record_content"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/fragment_color2"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:paddingStart="10dp"
+        tools:ignore="RtlSymmetry" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/my_color1" />
+</LinearLayout>
